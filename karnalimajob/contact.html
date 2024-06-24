@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		<a href="index.html" class="logo">
+			<img src="images/logo.png" alt="logo"></a>
+
+	<div class="menu-toggle">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</div>
+
+	<ul class="navlist">
+		<li><a href="index.html">home</a></li>
+		<li><a href="findjob.html">find a job</a></li>
+		<li><a href="contact.html">contact</a></li>
+		<li><a href="about.html">About us</a></li>
+	</ul>
+	<div class="register">
+		<a href="signup.html" class="sign-up">Sign Up </a>
+		<a href="signin.html"  class="sign-in">Sign In</a>
+	</div>
+</header>
+            <!--google Map-->
+  <div class="gmap">
+	<h1>Location</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.3227690291046!2d81.61896801805949!3d28.59009234481145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a285a1d00491ff%3A0xbc33453b21594523!2sGraduate%20School%20of%20Engineering%2C%20MWU!5e0!3m2!1sen!2snp!4v1664963759052!5m2!1sen!2snp" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div id="contact">
+	<form action="post" onsubmit="event.preventDefault();validateForm()">
+		<h1>contract us</h1>
+		<label for="name">Name:</label>
+		<input type="text" id="name" placeholder="Your name">
+		<small class="error"></small>
+
+		<label for="email">Email:</label>
+		<input type="text" id="email" placeholder="Your email">
+		<small class="Eerror"></small>
+		
+		<label for="message">Message:</label>
+		<textarea  id="message" placeholder="Your massage" rows="6"></textarea>
+		<small class="Merror"></small>
+
+		<div class="center">
+			<input type="submit" value="Send Message">
+			<p id="sucess"></p>
+
+		</div>
+	</form>
+</div>
+<!--footer-->
+<footer>
+	<div class="footer">
+		<h2>KARNALImaJOB</h2>
+		<div class="social-media">
+			<a href="#"><img src="icons/facebook.svg" alt=""> </a>
+			<a href="#"><img src="icons/instagram.svg" alt=""> </a>
+			<a href="#"><img src="icons/twitter.svg" alt=""> </a>
+		</div>
+	</div>
+	<div class="footer">
+	<h4>About us</h4>
+	<p>We are the new company based on surkhet,karnali</p>
+	</div>
+	<div class="footer">
+	<h4>Contact</h4>
+	<p>Address:Birendranagar 10,surkhet</p>
+	<p>Email:karnalimajob22@gmail.com</p>
+	<p>Phone:+977123456789</p>
+	</div>
+	<div class="footer">
+		<h4>Explore</h4>
+		<a href="">Top Companies</a>
+		<a href=""> Terms of services</a>
+		<a href="">Podcast</a>
+		<a href=""> Careers</a>
+	</div>
+	</footer>
+<script src="js/contact.js"></script>
+</body>
+</html>
